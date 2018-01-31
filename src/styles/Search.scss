@@ -1,23 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,600,700");
 
 .input-container {
-  opacity: 0.9;
   background-color: #2a2a2b;
-  height: 50px;
-  padding: 15px 0px 0px 0px;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
-  display: block;
-  height: 35px;
-  width: 400px;
+  height: 70%;
+  width: 30%;
   border-width: 0;
-  margin: 0px auto;
   padding-left: 10px;
-  font-size: 18px;
+  font-size: 1em;
   font-family: 'Dosis', sans-serif;
 }
 
 ::-webkit-input-placeholder {
   color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  input {
+    width: 50%;
+    font-size: 1em;
+  }
 }

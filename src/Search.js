@@ -20,14 +20,14 @@ export default class Search extends Component {
 
   render() {
     return (
-      <div className='input-container'>
+      <section className='input-container'>
         <input
           type='text'
           placeholder='Search for a school district...'
           value={this.state.input}
           onChange={this.handleChange}
           aria-label='district search' />
-      </div>
+      </section>
     );
   }
 }

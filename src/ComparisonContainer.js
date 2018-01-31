@@ -25,7 +25,6 @@ const ComparisonContainer = (
         let locationOne = Object.keys(comparisonCard)[0];
         let locationTwo = Object.keys(comparisonCard)[1];
 
-
         return (<ComparisonCard
           key={`comparisonCard${index}`}
           locationOne={locationOne}

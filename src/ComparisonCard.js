@@ -6,11 +6,17 @@ const ComparisonCard = (
   { locationOne, locationTwo, averageOne, averageTwo, comparisonData}
 ) => (
   <article className='comparison-card'>
-    <h3 className='location-one'>{locationOne}</h3>
-    <h4 className='average-one'>Average: {averageOne}</h4>
-    <h2>Compared: {comparisonData}</h2>
-    <h3 className='location-two'>{locationTwo}</h3>
-    <h4 className='average-two'>Average: {averageTwo}</h4>
+    <div className='location-one-box spacing'>
+      <h3 className='locations'>{locationOne}</h3>
+      <h4 className='average'>Average: {averageOne}</h4>
+    </div>
+    <div className='compared-box spacing'>
+      <h2>Compared: {comparisonData}</h2>
+    </div>
+    <div className='location-two-box spacing'>
+      <h3 className='locations'>{locationTwo}</h3>
+      <h4 className='average'>Average: {averageTwo}</h4>
+    </div>
   </article>
 );
 
